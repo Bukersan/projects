@@ -1,0 +1,1280 @@
+body {
+     /*width: 100%;*/
+     font-family: 'Muli-Light' sans-serif;
+     font-weight: 500;
+}
+
+.container {
+     /*width: 100%;*/
+     margin: 0 auto;
+}
+
+header {
+     margin: 0 auto;
+}
+
+.clearfix {
+     zoom: 1;
+}
+
+.clearfix::before,
+.clearfix::after {
+     display: block;
+
+     content: '';
+}
+
+.clearfix::after {
+     clear: both;
+}
+
+/*header-menu*/
+
+header {
+     display: flex;
+     justify-content: space-between;
+
+     width: 100%;
+     max-width: 1440px;
+     margin-bottom: 170px;
+}
+
+.container.container_header {
+     max-width: 1440px;
+}
+
+.header-menu {
+     width: 255px;
+     height: 100%;
+     margin-bottom: 120px;
+
+     background: #363740;
+}
+
+.header-menu_logo {
+     display: flex;
+     align-items: center;
+
+     margin: auto;
+     margin-bottom: 60px;
+     margin-left: 32px;
+     padding-top: 37px;
+}
+
+.logo-menu_title {
+     font-family: 'Muli-Bold';
+     font-size: 19px;
+     font-weight: 600;
+
+     color: #a4a6b3;
+}
+.logo-menu {
+     margin-right: 12px;
+}
+
+.menu-item {
+     display: flex;
+     align-items: center;
+     /*border: 1px solid red;*/
+}
+
+.menu-item:hover .menu-item_icon__text {
+     cursor: pointer;
+
+     color: #dde2ff;
+}
+
+.menu-item:hover img {
+     cursor: pointer;
+
+     background-color: white;
+}
+
+.menu-item:hover {
+     cursor: pointer;
+
+     color: #dde2ff;
+     border-left: 3px solid #dde2ff;
+     background: #9fa2b4;
+}
+.menu-item_icon__text:hover {
+     border: none;
+}
+
+.menu-item:nth-child(6) {
+     padding-bottom: 16px;
+
+     border-bottom: 1px solid #dfe0eb;
+}
+
+.menu-item:nth-child(7) {
+     padding-top: 16px;
+}
+
+.menu-item_icon {
+     display: block;
+
+     margin-left: 35px;
+}
+
+.menu-item_icon__text {
+     font-family: 'Muli-Light';
+     font-size: 16px;
+     font-weight: 500;
+
+     margin-left: 25px;
+     padding: 18px 0;
+
+     text-transform: capitalize;
+
+     color: #a4a6b3;
+}
+
+/*Section rating-scale*/
+
+.rating-scale {
+     width: 100%;
+     max-width: 1185px;
+     padding: 0 30px;
+
+     /* border: 3px solid yellowgreen;*/
+}
+
+.rating-scale_header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+     padding: 30px 30px;
+     padding-bottom: 60px;
+}
+
+.rating-scale_header-logo {
+     font-family: 'Muli-Bold';
+     font-size: 24px;
+     font-weight: 600;
+
+     color: #252733;
+}
+
+.rating-scale_header_social {
+     display: flex;
+     align-items: center;
+}
+
+.rating-scale_header_search {
+     margin-right: 30px;
+}
+.search-form {
+     position: relative;
+
+     width: 20px;
+     height: 20px;
+}
+
+.search-form {
+     position: relative;
+
+     width: 20px;
+     height: 20px;
+}
+
+.search-form__input {
+     position: absolute;
+     right: 30px;
+
+     visibility: hidden;
+
+     width: 0;
+
+     -webkit-transition: .2s;
+     -o-transition: .2s;
+     transition: .2s;
+
+     color: #000;
+     border: 0;
+     border-bottom: 0;
+     background-color: rgba(255, 255, 255, 0);
+}
+
+.search-form__input::-webkit-input-placeholder {
+     color: #fff;
+}
+
+.search-form__input::-moz-placeholder {
+     color: #fff;
+}
+
+.search-form__input:-ms-input-placeholder {
+     color: #fff;
+}
+
+.search-form__input::-ms-input-placeholder {
+     color: #fff;
+}
+
+.search-form__input::placeholder {
+     color: #000;
+}
+
+.search-form__button {
+     width: 20px;
+     height: 20px;
+
+     cursor: pointer;
+     -webkit-transition: .15s;
+     -o-transition: .15s;
+     transition: .15s;
+
+     border: 0;
+     background-color: rgba(255, 255, 255, 0);
+     background-image: url(../img/icon-search.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 100% auto;
+}
+
+.search-form:hover .search-form__input {
+     visibility: initial;
+
+     width: 150px;
+
+     border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.rating-scale_header_message {
+     padding-right: 35px;
+
+     border-right: 1px solid #dfe0eb;
+}
+
+.rating-scale_header_name-avatar {
+     font-family: 'Muli-Light';
+     font-size: 14px;
+     font-weight: 500;
+
+     padding-left: 30px;
+
+     color: #252733;
+}
+
+.rating-scale_header_icon-avatar {
+     min-width: 48px;
+     margin-left: 15px;
+}
+
+.advantages {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+
+     margin-bottom: 30px;
+}
+
+.advantages_item {
+     width: 100%;
+     max-width: 258px;
+     padding: 24px 32px 24px;
+
+     border: 1px solid #dfe0eb;
+     border-radius: 5px;
+}
+
+.advantages_title {
+     font-family: 'Muli-Bold';
+     font-size: 19px;
+     font-weight: 600;
+
+     padding-bottom: 12px;
+
+     text-align: center;
+     text-transform: capitalize;
+
+     color: #9fa2b4;
+}
+
+.advantages_subtitle {
+     font-family: 'Muli-Bold';
+     font-size: 40px;
+     font-weight: 600;
+
+     text-align: center;
+
+     color: #252733;
+}
+
+.advantages_item:hover {
+     cursor: pointer;
+
+     border: 1px solid #3751ff;
+}
+
+.advantages_item:hover p {
+     cursor: pointer;
+
+     color: #3751ff;
+}
+
+/*advantages-details*/
+
+.advantages-details {
+     width: 100%;
+     margin: 0 auto;
+     margin-bottom: 30px;
+}
+
+.advantages-rating_flex {
+     display: flex;
+     align-items: flex-end;
+     justify-content: space-between;
+}
+
+.advantages-rating_title {
+     font-family: 'Muli-Bold';
+     font-size: 19px;
+     font-weight: 600;
+
+     padding-bottom: 10px;
+
+     color: #252733;
+}
+
+.advantages-rating_subtitle {
+     font-family: 'Muli-Light';
+     font-size: 12px;
+     font-weight: 500;
+
+     color: #9fa2b4;;
+}
+
+.advantages-rating_additional {
+     display: flex;
+     align-items: center;
+}
+
+.advantages-rating_border-text {
+     display: block;
+
+     width: 20px;
+     height: 2px;
+     margin-right: 8px;
+
+     background-color: #dfe0eb;
+}
+
+.advantages-rating_text_additional {
+     font-family: 'Muli-Light';
+     font-size: 12px;
+     font-weight: 500;
+
+     color: #9fa2b4;
+}
+
+.advantages-rating_additional_wrapper {
+     display: flex;
+     align-items: center;
+}
+
+.advantages-rating_additional_wrapper:hover  span {
+     background-color: #3751ff;
+}
+
+.advantages-rating_additional .advantages-rating_additional_wrapper:first-child {
+     margin-right: 32px;
+}
+
+.advantages-graphic {
+     display: flex;
+     justify-content: space-between;
+
+     width: 100%;
+
+     border: 1px solid  #dfe0eb;
+     border-radius: 5px;
+}
+
+.advantages-graphic_details {
+     position: relative;
+
+     width: 100%;
+     padding: 32px 32px 0;
+
+     /*max-width: 780px;*/
+}
+
+.graphic-container {
+     position: relative;
+}
+
+.advantages-rating_flex {
+     padding-bottom: 70px;
+}
+
+.img_graphic_details {
+     display: block;
+
+     margin-right: 148px;
+}
+
+.advantages-graphic_details_subtext {
+     font-family: 'Muli-Light';
+     font-size: 10px;
+     font-weight: 500;
+
+     top: auto;
+
+     display: flex;
+     justify-content: space-around;
+
+     width: 95%;
+     margin: 0;
+     padding: 0;
+     padding-top: 3px;
+
+     word-spacing: 19px;
+
+     color: #9fa2b4;
+     border-top: 1px solid #ebedf0;
+}
+
+.advantages-graphic_details_subtext2 {
+     font-family: 'Muli-Light';
+     font-size: 10px;
+     font-weight: 500;
+
+     position: absolute;
+     top: 0;
+     right: 0;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+
+     height: 100%;
+
+/*width: 1ch;*/
+
+     text-align: end;
+
+/*letter-spacing: 6px;*/
+     word-wrap: break-word;
+
+     color: #9fa2b4;
+}
+
+.advantages-graphic_details-items {
+     width: 100%;
+     max-width: 342px;
+}
+
+.advantages-graphic_details-item {
+     width: 100%;
+     padding: 32px 0 24px;
+
+     border-bottom: 1px solid #dfe0eb;
+     border-left: 1px solid #dfe0eb;
+}
+
+.advantages-graphic_details-item:last-child {
+     border-bottom: none;
+}
+
+.advantages-graphic_details-item_text {
+     font-family: 'Muli-Light';
+     font-size: 16px;
+     font-weight: 500;
+
+     padding-bottom: 6px;
+
+     text-align: center;
+
+     color: #9fa2b4;
+}
+
+.advantages-graphic_details-item_subtext {
+     font-family: 'Muli-Bold';
+     font-size: 24px;
+     font-weight: 600;
+
+     text-align: center;
+
+     color: #252733;
+}
+
+/*advantages_additional-details*/
+
+.advantages_additional-details {
+     display: flex;
+     justify-content: space-between;
+
+     margin-bottom: 30px;
+}
+
+.advantages_additional-details_feature {
+     width: 100%;
+     max-width: 546px;
+
+/*padding: 32px 32px 0;*/
+
+     border: 1px solid #dfe0eb;
+     border-radius: 5px;
+}
+
+.advantages_additional-details_flex {
+     display: flex;
+     align-items: baseline;
+     justify-content: space-between;
+
+     padding: 32px 32px 0;
+}
+
+.advantages_additional-details_title_subtitle {
+     font-family: 'Muli-Light';
+     font-size: 12px;
+     font-weight: 500;
+
+     color: #9fa2b4;
+}
+
+.advantages_additional-details_title {
+     font-family: 'Muli-Bold';
+     font-size: 19px;
+     font-weight: 600;
+
+     padding-bottom: 10px;
+
+     color: #252733;
+}
+
+.advantages_additional-details_subtitle {
+     font-family: 'Muli-Light';
+     font-weight: 500;
+
+     padding-bottom: 16px;
+
+     text-transform: capitalize;
+
+     color: #9fa2b4;
+}
+
+.advantages_additional-details_subtitle-link {
+     font-family: 'Muli-Light';
+     font-weight: 500;
+
+     text-decoration: none;
+     text-transform: capitalize;
+
+     color: #9fa2b4;
+}
+.advantages_additional-details_subtitle-link:hover {
+     color: #3751ff;
+}
+
+.View-details_link {
+     font-family: 'Muli-Regular';
+     font-size: 14px;
+     font-weight: 500;
+
+     text-decoration: none;
+
+     color: #9fa2b4;
+}
+
+.View-details_link:hover {
+     color: #3751ff;
+}
+
+.advantages_additional-details_item {
+     display: flex;
+     justify-content: space-between;
+
+     padding: 20px 0 18px;
+
+     border-bottom: 1px solid #dfe0eb;
+}
+
+.advantages_additional-details_item_title {
+     font-family: 'Muli-Regular';
+     font-size: 14px;
+     font-weight: 500;
+
+     margin-left: 32px;
+
+     color: #252733;
+}
+
+.advantages_additional-details_item:last-child {
+     border: none;
+}
+
+.advantages_additional-details_item_discription {
+     font-family: 'Muli-Light';
+     font-size: 14px;
+     font-weight: 500;
+
+     margin-right: 32px;
+
+     color: #9fa2b4;
+}
+
+/*advantages_additional-details form*/
+
+.advantages_additional-details_form {
+     width: 100%;
+
+     /*padding: 0 32px;*/
+}
+
+.Createnewtask {
+     position: relative;
+
+     display: flex;
+     justify-content: space-between;
+
+     padding: 20px 0 18px;
+
+     border-bottom: 1px solid #dfe0eb;
+}
+
+.advantages_additional-details_form-item-text {
+     font-family: 'Muli-Light';
+     font-size: 14px;
+     font-weight: 500;
+
+     margin-left: 32px;
+
+     color: #c5c7cd;
+}
+
+.img_icon-plus {
+     position: absolute;
+     top: 15px;
+     right: 0;
+
+     margin-right: 32px;
+}
+
+.advantages_additional-details_form-item {
+     font-family: 'Muli-Regular';
+     font-size: 14px;
+     font-weight: 500;
+
+     position: relative;
+
+     display: block;
+
+     padding: 20px 0 18px;
+
+     color: #252733;
+     border-bottom: 1px solid #dfe0eb;
+}
+
+input[type=checkbox] {
+     display: none;
+}
+
+.tasks-label {
+     font-family: 'Muli-Regular';
+     font-size: 14px;
+     font-weight: 500;
+
+     position: relative;
+
+     margin-left: 32px;
+     padding-left: 36px;
+}
+
+.tasks-label::before {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+
+     display: block;
+     overflow: hidden;
+
+     width: 20px;
+     height: 20px;
+     margin: auto;
+
+     content: '';
+     transition: .15s;
+
+     border: 2px solid #c5c7cd;
+     border-radius: 50%;
+}
+
+.tasks-checkbox:checked ~ .tasks-label::before {
+     border: 2px solid transparent;
+     background-image: url('../img/active.png');
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: 20px auto;
+}
+
+input[type=submit] {
+     font-family: 'Muli-Bold';
+     font-size: 14px;
+     font-weight: 600;
+
+     position: absolute;
+     top: 12px;
+     right: 0;
+
+     float: right;
+
+     margin-right: 32px;
+
+/* width: 74px;
+     height: 24px;*/
+     padding: 5px 12px;
+
+     text-transform: capitalize;
+
+     color: #fff;
+     border: none;
+     border-radius: 10px;
+     background-color: #fec400;
+}
+
+
+.advantages_additional-details_form .advantages_additional-details_form-item:nth-child(3) .advantages_additional-details_form-submit {
+     background-color: #29cc97;
+}
+.advantages_additional-details_form .advantages_additional-details_form-item:nth-child(4) .advantages_additional-details_form-submit {
+     color: #9fa2b4;
+     background-color: #f0f1f7;
+}
+
+/*section Additional header-menu*/
+
+.ticket-office {
+     width: 100%;
+     max-width: 1122px;
+
+     border: 1.5px solid #dfe0eb;
+     border-radius: 8px;
+}
+.ticket-office_details {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+     margin-bottom: 48px;
+     padding: 32px 32px 0;
+}
+.ticket-office_details_sort-filter {
+     display: flex;
+     justify-content: space-between;
+
+     width: 100%;
+     max-width: 128px;
+}
+.ticket-office_details-item {
+     display: flex;
+
+     width: 60px;
+
+     text-align: center;
+}
+
+.ticket-office_details-item .www {
+     display: flex;
+
+     width: 60px;
+     padding-right: 32px;
+
+     border: 3px solid greenyellow;
+}
+
+.ticket-office_details-item .www2 {
+     display: flex;
+
+     width: 60px;
+     padding-right: 32px;
+
+     border: 3px solid greenyellow;
+}
+
+
+.ticket-office_details-item_img {
+     display: block;
+
+     margin-right: 10px;
+}
+
+.ticket-office_details-title {
+     font-family: 'Muli-Bold';
+     font-size: 19px;
+     font-weight: 600;
+     line-height: 24px;
+
+     color: #252733;
+}
+
+.ticket-office_details-item_img-text {
+     font-family: 'Muli-Light';
+     font-size: 14px;
+     font-weight: 500;
+
+     display: block;
+
+     text-transform: capitalize;
+
+     color: #4b506d;
+}
+.ticket-office_details-additional {
+     display: flex;
+     justify-content: space-between;
+
+     padding-bottom: 12px;
+
+     border-bottom: 1.5px solid #dfe0eb;
+}
+.ticket-office_details-additional-text {
+     display: flex;
+     justify-content: space-between;
+
+     width: 100%;
+     max-width: 532px;
+}
+.ticket-office_details-additional-text {
+     margin-right: 128px;
+}
+.ticket-office_details-additional-text_details {
+     font-family: 'Muli-Bold';
+     font-size: 14px;
+     font-weight: 600;
+
+     color: #9fa2b4;
+}
+.ticket-office_people-list-items {
+     display: flex;
+     align-items: center;
+
+     width: 100%;
+
+     border-bottom: 1px solid #dfe0eb;
+}
+.ticket-office_people-list-items:hover {
+     cursor: pointer;
+
+     background-color: #dfe0eb;
+}
+
+.table-container-wrap {
+     overflow: auto;
+
+     width: 100%;
+}
+
+.table-container {
+     display: table;
+
+     width: 100%;
+     min-width: 660px;
+     padding: 0 30px;
+
+     table-layout: fixed;
+
+     text-align: left;
+}
+
+.table-container .col {
+     display: table-column;
+}
+
+.table-container .col_1 {
+     width: 100%;
+}
+
+.table-container .col_2 {
+     width: 248px;
+}
+
+.table-container .col_3 {
+     width: 180px;
+}
+
+.table-container .col_4 {
+     width: 144px;
+}
+
+.table-container .col_5 {
+     width: 28px;
+}
+
+.table-container__row_padding .table-container__col {
+     padding: 32px 0 48px;
+}
+
+.table-container__row {
+     display: table-row;
+}
+
+.table-container__row_header .table-container__col {
+     height: 42px;
+}
+
+.table-container__col {
+     display: table-cell;
+
+     height: 92px;
+
+     vertical-align: middle;
+}
+
+.table-container__col_center {
+     text-align: center;
+}
+
+.ticket-office_people-list-item {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+     width: 100%;
+     margin-left: 32px;
+     padding: 24px 0;
+}
+.icon-avatar_ticket-office_people {
+     min-width: 44px;
+     margin-right: 25px;
+}
+.ticket-office_people-information-details-avatar {
+     display: flex;
+     align-items: center;
+}
+.ticket-office_people-information_details {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+     width: 100%;
+     max-width: 666px;
+}
+.ticket-office_people-information_description {
+     font-family: 'Muli-Regular';
+     font-size: 14px;
+     font-weight: 500;
+
+     padding-bottom: 5px;
+
+     color: #252733;
+}
+.ticket-office_people-information_additional {
+     font-family: 'Muli-Light';
+     font-size: 12px;
+     font-weight: 500;
+
+     color: #c5c7cd;
+}
+.ticket-office_people-information_priority {
+     display: flex;
+     display: inline-block;
+     align-items: center;
+
+     border-radius: 15px;
+}
+.ticket-office_people-information_priority-description {
+     font-family: 'Muli-Light';
+     font-size: 11px;
+     font-weight: 500;
+
+     padding: 5px 12px;
+
+     text-align: center;
+     text-transform: uppercase;
+
+     color: #fff;
+}
+
+.ticket-office_people-information_priority_high {
+     background-color: #f12b2c;
+}
+
+.ticket-office_people-information_priority_low {
+     background-color: #fec400;
+}
+
+.ticket-office_people-information_priority_normal {
+     background-color: #29cc97;
+}
+.ticket-office_people-information_slide-list {
+     display: flex;
+     justify-content: end;
+
+     width: 100%;
+     padding: 27px 0;
+}
+
+.ticket-office_people-information_slide_rows {
+     display: flex;
+     align-items: center;
+
+     width: 100%;
+     max-width: 375px;
+}
+
+.ticket-office_people-information_rows-text {
+     font-family: 'Muli-Light';
+     font-size: 14px;
+     font-weight: 500;
+
+     margin-right: 60px;
+
+     color: #9fa2b4;
+}
+.ticket-office_people-information_rows-text_color {
+     margin: 0 8px 0 5px;
+
+     color: #4b506d;
+}
+
+.ticket-office_people-information_slide-text {
+     font-family: 'Muli-Light';
+     font-size: 14px;
+     font-weight: 500;
+
+     display: flex;
+     align-items: center;
+
+     color: #9fa2b4;
+}
+
+.img_row-vector {
+}
+
+.img_left {
+     margin-right: 30px;
+     margin-left: 33px;
+}
+
+.img_right {
+}
+
+/*adaptive*/
+@media all and (max-width: 1400px) {
+     .advantages {
+          width: 100%;
+          margin: auto;
+          margin-bottom: 35px;
+     }
+     .advantages .advantages_item {
+          margin: 15px;
+     }
+     .advantages .advantages_item:last-child {
+          width: 100%;
+          margin: auto;
+          margin-top: 60px;
+          /*border: 1px solid red;/*Тупо не перебить Кодом ниже*/
+     }
+}
+
+@media all and (max-width: 1330px) {
+     .rating-scale_header {
+          width: 100%;
+          padding-bottom: 30px;
+     }
+     .advantages {
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          width: 100%;
+          margin: auto;
+          margin-bottom: 30px;
+     }
+     .advantages-details {
+          margin: auto;
+     }
+     .advantages_item {
+          margin: 15px;
+     }
+     .advantages-graphic,
+     .advantages-graphic_details {
+          width: 100%;
+     }
+
+     .img_graphic_details {
+          width: 92%;
+          margin-right: 0;
+     }
+     .advantages-graphic_details_subtext {
+          display: flex;
+
+          width: 90%;
+     }
+     .icon-avatar_ticket-office_people img {
+          max-width: 44px;
+     }
+}
+@media all and (max-width: 1250px) {
+     .table-container {
+          text-align: center;
+     }
+     .table-container .col:not(.col_5) {
+          width: 100%;
+     }
+}
+@media all and (max-width: 1185px) {
+     .advantages-graphic_details_subtext {
+          width: 95%;
+     }
+     .advantages {
+          display: flex;
+          flex-wrap: wrap;
+     }
+     .advantages .advantages_item,
+     .advantages .advantages_item:last-child {
+          margin: 15px;
+     }
+     .advantages-graphic {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+     }
+     .advantages-graphic_details-items {
+          margin-bottom: 35px;
+     }
+     .advantages-graphic_details-item {
+          border-left: none;
+     }
+     .advantages-graphic_details-item:last-child {
+          border-bottom: 1px solid #dfe0eb;
+     }
+     .advantages {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          /*width: 80%;*/
+     }
+     .advantages_item {
+          width: 100%;
+     }
+}
+@media all and (max-width: 1070px, 1035px) {
+     .advantages-graphic_details_subtext {
+          width: 100%;
+
+          word-spacing: 15px;
+     }
+}
+@media all and (max-width: 1070px) {
+     .advantages_additional-details {
+          flex-wrap: wrap;
+     }
+     .advantages_additional-details_feature {
+          max-width: 100%;
+     }
+}
+
+@media all and (max-width: 950px) {
+     .advantages-graphic {
+          margin-bottom: 45px;
+     }
+     .advantages_additional-details_feature:first-child {
+          margin-bottom: 45px;
+     }
+     .advantages_item {
+          max-width: 100%;
+     }
+     .ticket-office_people-information_description {
+          font-size: 12px;
+     }
+     .icon-avatar_ticket-office_people {
+          margin-right: 10px;
+     }
+}
+@media all and (max-width: 800px) {
+     .container.container_header {
+          width: 100%;
+     }
+     header {
+          flex-wrap: wrap;
+     }
+     .header-menu {
+          width: 100%;
+
+          text-align: center;
+     }
+     .logo-menu {
+          margin: 0 0 10px;
+     }
+     .logo-menu_title {
+          margin-bottom: 35px;
+     }
+     .header-menu_logo {
+          display: block;
+          justify-content: center;
+
+          margin: auto;
+     }
+     .rating-scale_header {
+          display: inline;
+     }
+     .rating-scale_header-logo {
+          margin-bottom: 35px;
+
+          text-align: center;
+     }
+     .rating-scale_header_social {
+          justify-content: center;
+
+          margin-bottom: 25px;
+     }
+     .rating-scale_header_name-avatar {
+          line-height: 21px;
+     }
+}
+@media all and (max-width: 530px) {
+     .advantages-rating_flex {
+          display: block;
+     }
+     .advantages-rating_title-subtitle {
+          margin-bottom: 15px;
+
+          text-align: center;
+     }
+     .advantages-rating_additional {
+          justify-content: center;
+
+          width: 100%;
+     }
+}
+@media all and (max-width: 430px) {
+     .tasks-label {
+          font-size: 12px;
+
+          display: block;
+
+          width: 120px;
+     }
+     .advantages-graphic_details_subtext2 {
+          height: 85%;
+     }
+     .menu-item {
+          justify-content: center;
+     }
+     .menu-item_icon {
+          margin: 0;
+     }
+     .ticket-office_people-information_slide_rows {
+          display: table;
+
+          width: 100%;
+          max-width: 375px;
+          margin-right: 0;
+
+          text-align: center;
+     }
+     .ticket-office_people-information_rows-text {
+          margin-right: 0;
+          margin-bottom: 15px;
+     }
+     .ticket-office_people-information_slide-text {
+          display: flex;
+          justify-content: center;
+     }
+}
+
