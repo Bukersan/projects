@@ -1,0 +1,7 @@
+{
+    "csscomb.formatOnSave": true,
+    "csscomb.ignoreFilesOnSave": [
+    
+    ],
+    "files.autoSave": "onWindowChange"
+}
